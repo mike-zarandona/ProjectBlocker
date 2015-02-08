@@ -1,0 +1,22 @@
+{
+  "name": "ProjectBlocker",
+  "version": "1.0.0",
+  "dependencies": {
+    "grunt-cli": "latest",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-less": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-contrib-clean": "latest",
+    "grunt-contrib-cssmin": "latest"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-rename": "0.0.3",
+    "grunt-csstojs": "^0.2.0",
+    "grunt-html2str": "0.0.1",
+    "grunt-mkdir": "^0.1.2"
+  }
+}

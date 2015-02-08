@@ -1,0 +1,26 @@
+{
+  "name": "project-blocker",
+  "version": "1.0.0",
+  "homepage": "https://github.com/mike-zarandona/ProjectBlocker",
+  "authors": [
+    "Mike Zarandona <mike@zarandona.com>"
+  ],
+  "description": "A handy jQuery solution for blocking responsive, IE, or incomplete bits from being seen while in development.",
+  "main": "build/jquery.projectblocker.min.js",
+  "keywords": [
+    "responsive",
+    "block",
+    "project",
+    "projectblocker",
+    "development",
+    "staging"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
