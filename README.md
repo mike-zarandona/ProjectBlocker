@@ -9,7 +9,7 @@ A handy jQuery solution for blocking responsive, IE, or incomplete bits from bei
 
 _Features_:
 - **Block responsive web design** - gives you the ability to demo coded previews without worrying about how the project might look on mobile devices.
-- **Block the frontpage** - show a polite message that a page isn't yet ready to be viewed to keep visitors out of broken or unfinished areas of preview sites.
+- **Block the homepage** - show a polite message that a page isn't yet ready to be viewed to keep visitors out of broken or unfinished areas of preview sites.
 - **Block Internet Explorer** - _duh_.
 - **Customizable and friendly blocking messages** - because good UX is the right thing to do.
 - **Bypass for developers** - for sanity.
@@ -36,10 +36,10 @@ $(document).on('ready', function() {
 $(document).on('ready', function() {
 	$.projectBlocker({
 		responsive: 'hide',
-		maxWidth: 1200,
+		minWidth: 1200,
 
-		frontpage: 'hide',
-		frontpageSelector: '#wrapper.homepage',
+		homepage: 'hide',
+		homepageSelector: '#wrapper.homepage',
 
 		ie: 'hide'
 	});
@@ -77,10 +77,10 @@ Append this to the end of your URL to turn off `Developer Mode` to see the **`Pr
 ## Options
 | Option 	| Type 	| Default 	| Description 	|
 |--------	|------	|---------	|-------------	|
-| **`responsive`** | _string_	| `'hide'`	| Hides or shows responsive web design to the visitor. Used along with `maxWidth`.	|
+| **`responsive`** | _string_	| `'hide'`	| Hides or shows responsive web design to the visitor. Used along with `minWidth`.	|
 | **`minWidth`**	| _int_	| `'0'`	| The minimum viewing width of the page before the warning is introduced.	|
-| **`frontpage`**	| _string_	| `'show'`	| Hides or shows the frontpage of the site. Used along with `frontpageSelector`.	|
-| **`frontpageSelector`**	| _string_	| `null`	| Any time this jQuery selector is matched the page will be hidden. Handy for the frontpage or anything you're trying to block.	|
+| **`homepage`**	| _string_	| `'show'`	| Hides or shows the homepage of the site. Used along with `homepageSelector`.	|
+| **`homepageSelector`**	| _string_	| `null`	| Any time this jQuery selector is matched the page will be hidden. Handy for the homepage or anything you're trying to block.	|
 | **`ie`**	| _string_	| `'hide'`	| Hides or shows Internet Explorer.	|
 
 <br />
